@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import Routing from './Routing';
+import MainTemplate from './templates/main/MainTemplate';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -14,7 +15,9 @@ root.render(
   <React.StrictMode>
       <Provider store={store}>
           <BrowserRouter>
-              <App />
+              <MainTemplate>
+                  <Routing />
+              </MainTemplate>
           </BrowserRouter>
       </Provider>
   </React.StrictMode>
