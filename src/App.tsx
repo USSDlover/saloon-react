@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
+function Readings () {
+    return (
         <section>
             <ul>
                 <li>
                     <a
-                        href="https://reactrouter.com/docs/en/v6/getting-started/tutorial"
+                        href="https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -27,6 +25,13 @@ function App() {
                 </li>
             </ul>
         </section>
+    )
+}
+
+function App() {
+  return (
+    <div>
+        <Readings />
     </div>
   );
 }

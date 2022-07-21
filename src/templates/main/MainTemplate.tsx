@@ -4,7 +4,12 @@ import {Link} from 'react-router-dom';
 export default function MainTemplate(props: any) {
     return (
         <>
-            <h1>Saloon APP</h1>
+            <Link style={{
+                textDecoration: "none",
+                color: "black"
+            }} to="/">
+                <h1>Saloon APP</h1>
+            </Link>
             <nav
                 style={{
                     borderBottom: "solid 1px",
